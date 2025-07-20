@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Videography Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gradient-to-tr from-purple-900 via-pink-950 to-indigo-900 text-white font-sans min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-black bg-opacity-75 backdrop-blur-lg z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-5 px-6">
+      <h1 class="text-3xl font-extrabold tracking-widest uppercase text-pink-400 cursor-default select-none animate-pulse">WEST FILMMAKER</h1>
+      <nav>
+        <ul class="flex space-x-10 text-lg font-semibold uppercase tracking-wide">
+          <li><a href="#about" class="hover:text-pink-300 transition duration-300 ease-in-out">About</a></li>
+          <li><a href="#portfolio" class="hover:text-pink-300 transition duration-300 ease-in-out">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-pink-300 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 max-w-6xl mx-auto px-8 flex-grow space-y-16 animate-fadeIn">
+    <!-- About Section -->
+    <section id="about" class="text-center space-y-8">
+      <div class="flex flex-col items-center gap-8">
+        <!-- Logo Placeholder: Replace 'logo.png' with your logo filepath -->
+        <img src="logo.png" alt="Your Logo" class="h-32 w-auto object-contain drop-shadow-2xl rounded-lg border-4 border-pink-500 shadow-pink-600/80 animate-bounce" />
+        <p class="max-w-3xl text-gray-200 text-xl leading-relaxed tracking-wide font-light">
+          Welcome! I'm a passionate videographer specializing in video editing, color grading, animation, motion posters,
+          invitation design, commercial production, documentaries, and event coverage. Explore my portfolio below.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="space-y-12">
+      <h2 class="text-5xl font-extrabold text-pink-400 border-b-4 border-pink-500 pb-4 max-w-max mx-auto tracking-tight drop-shadow-lg animate-gradient-text">
+        Portfolio
+      </h2>
+
+      <div class="space-y-12">
+
+        <!-- Video Editing -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-pink-600 via-purple-700 to-indigo-700 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Video Editing</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="video editing.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <video width="300" height="100" controls>
+              <source src="video editing.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="video-editing" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="video-editing-extra">
+            <video width="300" height="100" controls>
+              <source src="video-editing2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+
+          </div>
+        </div>
+
+        <!-- Color Grading -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-red-600 via-pink-700 to-purple-700 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-100">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Color Grading</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button data-section="color-grading" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="color-grading-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Animation -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-green-600 via-teal-700 to-cyan-700 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-200">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Animation</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="animation" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="animation-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Motion Poster -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-yellow-600 via-orange-700 to-red-700 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-300">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Motion Poster</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                        <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button data-section="motion-poster" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="motion-poster-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Invitation -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-pink-800 via-purple-900 to-indigo-900 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-400">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Invitation</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="invitation" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="invitation-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Commercial Production -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-indigo-700 via-purple-800 to-pink-800 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-500">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Commercial Production</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="commercial-production" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="commercial-production-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Wedding Project's -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-teal-700 via-cyan-800 to-blue-900 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-600">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Wedding Project's</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="wedding 2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="wedding.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+
+          </div>
+          <button data-section="documentary" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="documentary-extra">
+            <video width="300" height="100" controls>
+              <source src="reception.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="mehendi full_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="haldi.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="poolparty_5.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Pre-Wedding Project's -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-pink-800 via-purple-900 to-indigo-900 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-400">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Pre-Wedding Project's</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="invitation" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="invitation-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+
+        <!-- Event Coverage -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-red-700 via-pink-800 to-purple-900 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-700">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Event Coverage</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="event-coverage" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="event-coverage-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Regular Client's -->
+        <div
+          class="rounded-3xl p-8 bg-gradient-to-r from-pink-800 via-purple-900 to-indigo-900 shadow-2xl hover:shadow-pink-600/70 transform hover:scale-[1.03] transition-transform duration-500 animate-slideInUp delay-400">
+          <h3 class="text-3xl font-bold mb-8 border-b-4 border-pink-300 pb-3 max-w-max text-white tracking-wide">Regular Client's</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+            
+            <!-- Video Thumbnail -->
+            <video width="300" height="100" controls>
+              <source src="media.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+          </div>
+          <button data-section="invitation" class="see-more-btn mt-6 bg-pink-600 hover:bg-pink-700 transition w-max px-6 py-3 rounded-3xl font-semibold text-white shadow-lg shadow-pink-600/60">
+            See More
+          </button>
+          <div class="extra-videos mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8 hidden" id="invitation-extra">
+            <video width="300" height="100" controls>
+              <source src="media2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="media3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <video width="300" height="100" controls>
+              <source src="video-editing3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-14 max-w-xl mx-auto">
+  <h2 class="text-4xl font-extrabold text-pink-400 border-b-4 border-pink-500 pb-4 max-w-max mx-auto text-center tracking-wide drop-shadow-lg">
+    Contact Me
+  </h2>
+
+  <!-- WhatsApp Button Only -->
+  <div class="mt-12 text-center">
+    <a href="https://wa.me/919861224893?text=Hi!%20I%20am%20interested%20in%20your%20videography%20services.%20Can%20you%20please%20share%20more%20details?"
+      target="_blank"
+      class="inline-block bg-green-500 hover:bg-green-600 text-white font-extrabold text-xl tracking-wide px-8 py-5 rounded-3xl shadow-lg shadow-green-600/60 transition duration-300 ease-in-out">
+      📱 Message on WhatsApp
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer
+    class="bg-black bg-opacity-70 backdrop-blur-sm py-8 text-center text-pink-400 text-sm tracking-wide flex items-center justify-center gap-6 select-none">
+    <p>&copy; 2024 My Videography Portfolio. All rights reserved.</p>
+    <div class="flex space-x-4">
+      <a href="https://www.instagram.com/westfilmmaker1?igsh=dzF3ZXUwbWJ6M2t2" target="_blank" rel="noopener" title="Instagram"
+        class="hover:text-pink-300 transition">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" />
+      </a>
+      <a href="https://m.facebook.com/61568217077608/" target="_blank" rel="noopener" title="Facebook"
+        class="hover:text-pink-300 transition">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
+      </a>
+    </div>
+  </footer>
+
+  <!-- Custom Animations -->
+  <style>
+    @keyframes slideInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-slideInUp {
+      animation: slideInUp 0.7s ease forwards;
+    }
+
+    /* Gradient Text Animation */
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .animate-gradient-text {
+      background: linear-gradient(270deg, #ec4899, #8b5cf6, #3b82f6);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 4s ease infinite;
+    }
+  </style>
+
+ 
